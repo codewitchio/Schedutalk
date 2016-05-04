@@ -27,3 +27,7 @@ https://www.visualstudio.com/post-download-vs?sku=community&clcid=0x409#
 After that simply download Xamarin, make sure you have checked in that you are using visual studio
 
 https://www.xamarin.com/download
+
+Now launch visual studio and import the project. (Navigate to the .sln file)
+Once done, note in the error list that you can choose which errors to display (default is Build + Intellisense) change this to build.
+Then choose suitable deploy device. On windows it is recommend to deploy and test the UI on windows 8.1. (Goes faster compared to laucnhing the android emulator)
