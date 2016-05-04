@@ -12,31 +12,38 @@ namespace Schedutalk.ViewModel
 {
     public class VMMainView : VMBase
     {
-        public string Greeting {
-            get; private set;
-        }
-        public string Name {
-            get; set;
-        }
-        public ICommand Test
+        public Model.Human Human
         {
             get; set;
         }
 
+        private string greeting;
+
+        public string Greeting
+        {
+            get
+            {
+                return greeting;
+            }
+            private set
+            {
+
+                greeting = value;
+                OnPropertyChanged("Greeting");
+            }
+        }
+
         public VMMainView()
         {
-            Debug.WriteLine("Debug line");
-            Name = "Hello world";
-            Greeting = "";
-            Test = SayHello;
+            Human = new Model.Human();
+            Human.Name = "Hello world";
         }
 
         public ICommand SayHello { 
 	            get {
                     return new Command(() =>
                     {
-                        Debug.WriteLine("Command executed");
-                        Greeting = $"Hello {Name}";
+                        Greeting = $"Hello {Human.Name}";
                     });   
                 } 
             }

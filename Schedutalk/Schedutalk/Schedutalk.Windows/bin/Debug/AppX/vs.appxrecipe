@@ -28,11 +28,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\Schedutalk.Windows.exe">
       <PackagePath>Schedutalk.Windows.exe</PackagePath>
-      <Modified>2016-05-04T07:23:22.524</Modified>
+      <Modified>2016-05-04T09:52:20.486</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk\bin\Debug\Schedutalk.dll">
       <PackagePath>Schedutalk.dll</PackagePath>
-      <Modified>2016-05-04T07:23:21.011</Modified>
+      <Modified>2016-05-04T09:52:18.819</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
