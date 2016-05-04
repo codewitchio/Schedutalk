@@ -1,4 +1,4 @@
-# Schedutalk-
+# Schedutalk
 
 ##About
 This project is part of a school assignment at KTH (Royal Swedish Institution of Technology). The main goal of this project is to learn how to use github in projects and therefore we hope to maintain a good repo at github.
