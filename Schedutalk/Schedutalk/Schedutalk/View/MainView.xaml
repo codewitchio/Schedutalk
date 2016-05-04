@@ -4,8 +4,9 @@
              x:Class="Schedutalk.View.MainView">
     <ContentPage>
       <StackLayout>
-        <Label Text="Hello world"></Label>
-        <Button Text="Press here"></Button>
+        <Entry Text="{Binding Name}"></Entry>
+        <Button Text="Press here" Command="{Binding Test}"></Button>
+        <Label Text="{Binding Greeting}"></Label>
       </StackLayout>
     </ContentPage>
   </TabbedPage>

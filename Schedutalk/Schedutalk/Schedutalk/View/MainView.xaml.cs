@@ -13,6 +13,7 @@ namespace Schedutalk.View
         public MainView()
         {
             InitializeComponent();
+            BindingContext = new ViewModel.VMMainView();
         }
         
     }

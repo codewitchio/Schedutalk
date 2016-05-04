@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Schedutalk.ViewModel
 {
-    abstract class VMBase : INotifyPropertyChanged
+    public abstract class VMBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
     }
