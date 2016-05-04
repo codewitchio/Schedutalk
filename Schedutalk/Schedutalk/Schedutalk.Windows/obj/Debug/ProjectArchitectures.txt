@@ -1,0 +1,2 @@
+C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\Schedutalk.Windows.csproj;neutral
+C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk\Schedutalk.csproj;neutral
