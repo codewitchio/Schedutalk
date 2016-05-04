@@ -8,3 +8,4 @@ C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk\bin\Debug\Xamarin
 C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk\obj\Debug\Schedutalk.csprojResolveAssemblyReference.cache
 C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk\obj\Debug\Schedutalk.dll
 C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk\obj\Debug\Schedutalk.pdb
+C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk\obj\Debug\Schedutalk.View.MainView.xaml.g.cs
