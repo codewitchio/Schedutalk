@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Schedutalk.Model
 {
-    class MDate : ViewModel.VMBase
+    public class MDate : ViewModel.VMBase
     {
         private int hour;
         private int minute;
