@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace Schedutalk.View
 {
-    public partial class MainView : TabbedPage
+    public partial class MainView : ContentPage
     {
         public MainView()
         {
