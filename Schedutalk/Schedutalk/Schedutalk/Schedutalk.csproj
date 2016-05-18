@@ -36,7 +36,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="CustomControl\TimeLineLayout.cs" />
     <Compile Include="Model\Human.cs" />
+    <Compile Include="Model\MDate.cs" />
+    <Compile Include="Model\MEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\VMBase.cs" />
     <Compile Include="ViewModel\VMMainView.cs" />
