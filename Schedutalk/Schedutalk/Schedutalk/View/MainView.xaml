@@ -16,7 +16,7 @@
 
       <Label Text="Select Date" Grid.Column="0"></Label>
 
-      <DatePicker Grid.Column="1" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Now}">
+      <DatePicker Grid.Column="1" VerticalOptions="CenterAndExpand" Date="{Binding SelectedDate}">
         <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
         <DatePicker.MinimumDate>
           <sys:DateTime x:FactoryMethod="Parse">
