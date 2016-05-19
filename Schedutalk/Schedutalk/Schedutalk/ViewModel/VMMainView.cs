@@ -52,6 +52,16 @@ namespace Schedutalk.ViewModel
             }
         }
 
+        public Command OnSelectEvent
+        {
+            get
+            {
+                return new Command(item =>
+                {
+                });
+            }
+        }
+
         public VMMainView()
         {
             ScheduleInfo = new ObservableCollection<MEvent>();
@@ -62,7 +72,6 @@ namespace Schedutalk.ViewModel
             DateTime presentDate = DateTime.Now;
             setDemoValues(presentDate);
             SelectedDate = new DateTime(presentDate.Year, presentDate.Month, presentDate.Day);
-
             ScheduleInfo = getScheduleInfo();
         }
 

@@ -44,7 +44,7 @@
             </DataTemplate>
           </local:TimeLineLayout.ItemTemplate>
         </local:TimeLineLayout>
-        <local:TimeLineLayout ItemsSource="{Binding ScheduleEvents}"
+        <local:TimeLineLayout ItemsSource="{Binding ScheduleEvents}" Command="{Binding OnSelectEvent}"
           BackgroundColor="Black" HorizontalOptions="FillAndExpand">
           <local:TimeLineLayout.ItemTemplate>
             <DataTemplate>
