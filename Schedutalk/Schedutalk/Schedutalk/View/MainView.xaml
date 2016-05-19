@@ -1,12 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage  xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage  xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Schedutalk.View.MainView">
-    <ContentPage>
-      <StackLayout>
-        <Entry Text="{Binding Human.Name}"></Entry>
-        <Button Text="Press here" Command="{Binding SayHello}"></Button>
-        <Label Text="{Binding Greeting}"></Label>
+             xmlns:local="clr-namespace:Schedutalk.CustomControl;assembly=Schedutalk"
+             x:Class="Schedutalk.View.MainView" Title="Schedule">
+  <StackLayout>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="60"></ColumnDefinition>
+        <ColumnDefinition Width="*"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="auto"></RowDefinition>
+      </Grid.RowDefinitions>
+
+      <Label Text="Select Date" Grid.Column="0"></Label>
+
+      <DatePicker Grid.Column="1" VerticalOptions="CenterAndExpand" Date="{Binding SelectedDate}">
+        <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+        <DatePicker.MinimumDate>
+          <sys:DateTime x:FactoryMethod="Parse">
+            <x:Arguments>
+              <x:String>Jan 1 2000</x:String>
+            </x:Arguments>
+          </sys:DateTime>
+        </DatePicker.MinimumDate>
+        <DatePicker.MaximumDate>
+          <sys:DateTime x:FactoryMethod="Parse">
+            <x:Arguments>
+              <x:String>Dec 31 2050</x:String>
+            </x:Arguments>
+          </sys:DateTime>
+        </DatePicker.MaximumDate>
+      </DatePicker>
+    </Grid>
+    <ScrollView>
+      <StackLayout Orientation="Horizontal" BackgroundColor="White">
+        <local:TimeLineLayout ItemsSource="{Binding ScheduleInfo}">
+          <local:TimeLineLayout.ItemTemplate>
+            <DataTemplate>
+              <Label Text="{Binding StartDate.Hour, StringFormat='{00:#,#00}:00'}"
+                     BackgroundColor="Black" FontSize="14" WidthRequest="60"></Label>
+            </DataTemplate>
+          </local:TimeLineLayout.ItemTemplate>
+        </local:TimeLineLayout>
+        <local:TimeLineLayout ItemsSource="{Binding ScheduleEvents}"
+          BackgroundColor="Black" HorizontalOptions="FillAndExpand">
+          <local:TimeLineLayout.ItemTemplate>
+            <DataTemplate>
+              <Grid HorizontalOptions="FillAndExpand" BackgroundColor="Gray">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="auto"></RowDefinition>
+                  <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Text="{Binding Title}" 
+                       WidthRequest="300" Grid.Row="0" FontSize="20"
+                       LineBreakMode="WordWrap" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand"
+                  ></Label>
+                <StackLayout Grid.Row="1">
+                  <Label Text="{Binding Information}"
+                         WidthRequest="300" FontSize="14" VerticalOptions="FillAndExpand"></Label>
+                </StackLayout>
+              </Grid>
+            </DataTemplate>
+          </local:TimeLineLayout.ItemTemplate>
+        </local:TimeLineLayout>
       </StackLayout>
-    </ContentPage>
-  </TabbedPage>
+    </ScrollView>
+  </StackLayout>
+</ContentPage>
