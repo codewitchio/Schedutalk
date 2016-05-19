@@ -15,11 +15,11 @@ namespace Schedutalk.CustomControl
     class TimeLineLayout : Layout<Xamarin.Forms.View>
     {
         public static readonly BindableProperty ItemsSourceProperty = BindableProperty.Create(nameof(ItemsSource), typeof(IList), typeof(TimeLineLayout), null, propertyChanged: OnItemsSourcePropertyChanged);
-        
+
         private static void OnItemsSourcePropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var items = newValue as ObservableCollection<MEvent>;
-            
+
             var layout = bindable as TimeLineLayout;
 
             if (layout != null)
@@ -28,6 +28,7 @@ namespace Schedutalk.CustomControl
 
         private void OnItemsSourceChanged(IEnumerable oldValue, IEnumerable newValue)
         {
+            Children.Clear();
             // Remove handler for oldValue.CollectionChanged
             var oldValueINotifyCollectionChanged = oldValue as INotifyCollectionChanged;
 
@@ -39,28 +40,21 @@ namespace Schedutalk.CustomControl
             var newValueINotifyCollectionChanged = newValue as INotifyCollectionChanged;
             if (null != newValueINotifyCollectionChanged)
             {
-                if (this.Children.Count < ItemsSource.Count) //Ensure all items added be4 binding are included!
+                foreach (var item in ItemsSource)
                 {
-                    foreach (var item in ItemsSource)
-                    {
-                        var view = (Xamarin.Forms.View)ItemTemplate.CreateContent();
-                        var bindableObject = view as BindableObject;
-                        if (bindableObject != null)
-                            bindableObject.BindingContext = item;
-                        this.Children.Add(view);
-                    }
+                    var view = (Xamarin.Forms.View)ItemTemplate.CreateContent();
+                    var bindableObject = view as BindableObject;
+                    if (bindableObject != null)
+                        bindableObject.BindingContext = item;
+                    this.Children.Add(view);
                 }
-                else
-                {
-                    this.Children.Clear();
-                }
+
                 newValueINotifyCollectionChanged.CollectionChanged += new NotifyCollectionChangedEventHandler(INotifyCollectionChanged);
             }
         }
 
         private void INotifyCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
-
             var view = (Xamarin.Forms.View)ItemTemplate.CreateContent();
             var bindableObject = view as BindableObject;
             if (bindableObject != null && ItemsSource.Count > 0)
@@ -102,7 +96,7 @@ namespace Schedutalk.CustomControl
             var layout = ComputeNaiveLayout(widthConstraint, heightConstraint);
             var width = layout.Max(row => row.Width);
             var last = layout[layout.Count - 1];
-            if (last.Count == 0) return new SizeRequest(new Size(0,0));
+            if (last.Count == 0) return new SizeRequest(new Size(0, 0));
 
             var height = last[last.Count - 1].Bottom;
 
@@ -126,7 +120,7 @@ namespace Schedutalk.CustomControl
             result.Add(row);
 
             var spacing = Spacing;
-            
+
             double yScale = 2;
 
             if (ItemsSource == null) throw new Exception("Make sure binding is working!");
@@ -135,18 +129,23 @@ namespace Schedutalk.CustomControl
 
             for (int i = 0; i < Children.Count; i++)
             {
+                if (ItemsSource.Count <= i)
+                {
+                    //No point to continue if all itemsSources are calculated
+                    break;
+                }
                 Xamarin.Forms.View child = Children[i];
                 var request = child.GetSizeRequest(double.PositiveInfinity, double.PositiveInfinity);
 
                 mEvents.MoveNext();
-                
+
                 MEvent mEvent = mEvents.Current as MEvent;
                 MDate dTS = mEvent.StartDate;
                 MDate dTE = mEvent.EndDate;
 
-                double topY = (double)dTS.Hour*60 + (double)dTS.Minute;
-                double botY = (double)dTE.Hour*60 + (double)dTE.Minute;
-                row.Add(new Rectangle(0, topY*yScale, request.Request.Width, (botY - topY)*yScale));
+                double topY = (double)dTS.Hour * 60 + (double)dTS.Minute;
+                double botY = (double)dTE.Hour * 60 + (double)dTE.Minute;
+                row.Add(new Rectangle(0, topY * yScale, request.Request.Width, (botY - topY) * yScale));
                 row.Width = request.Request.Width + spacing;
                 row.Height = Math.Max(row.Height, timePositions * yScale);
             }
@@ -158,7 +157,7 @@ namespace Schedutalk.CustomControl
         {
             var layout = ComputeLayout(width, height);
             int i = 0;
-            
+
             foreach (var region in layout)
             {
                 var child = Children[i];
