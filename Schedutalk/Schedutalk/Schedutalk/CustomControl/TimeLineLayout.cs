@@ -40,26 +40,32 @@ namespace Schedutalk.CustomControl
             var newValueINotifyCollectionChanged = newValue as INotifyCollectionChanged;
             if (null != newValueINotifyCollectionChanged)
             {
-                foreach (var item in ItemsSource)
+                foreach (MEvent item in ItemsSource)
                 {
-                    var view = (Xamarin.Forms.View)ItemTemplate.CreateContent();
-                    var bindableObject = view as BindableObject;
-                    if (bindableObject != null)
-                        bindableObject.BindingContext = item;
-                    this.Children.Add(view);
+                    addChildToView(item);
                 }
 
                 newValueINotifyCollectionChanged.CollectionChanged += new NotifyCollectionChangedEventHandler(INotifyCollectionChanged);
             }
         }
 
-        private void INotifyCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        private void addChildToView(MEvent item)
         {
             var view = (Xamarin.Forms.View)ItemTemplate.CreateContent();
+            var tapGestureRecognizer = new TapGestureRecognizer();
+            tapGestureRecognizer.Tapped += (s, e) => {
+                Command.Execute(item);
+            };
+            view.GestureRecognizers.Add(tapGestureRecognizer);
             var bindableObject = view as BindableObject;
-            if (bindableObject != null && ItemsSource.Count > 0)
-                bindableObject.BindingContext = ItemsSource[ItemsSource.Count - 1];
+            if (bindableObject != null)
+                bindableObject.BindingContext = item;
             this.Children.Add(view);
+        }
+
+        private void INotifyCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            if (ItemsSource.Count > 0) addChildToView((MEvent)ItemsSource[ItemsSource.Count - 1]);
         }
 
         public IList ItemsSource
@@ -72,6 +78,14 @@ namespace Schedutalk.CustomControl
             {
                 SetValue(ItemsSourceProperty, value);
             }
+        }
+
+        public static readonly BindableProperty CommandProperty = BindableProperty.Create<TimeLineLayout, Command>(c => c.Command, null);
+
+        public Command Command
+        {
+            get { return (Command)GetValue(CommandProperty); }
+            set { SetValue(CommandProperty, value); }
         }
 
         public double Spacing
