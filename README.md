@@ -8,7 +8,7 @@ We chosen to work with the Xamarin framework for .NET
 
 Due to the short time this project will be held the goal is to make the app function on a  Nexus 6 running Android 6.0.1 but also a Windows Lumia 635 using windows 10.0.14295.1005. Hopefully other models and version will function as well, this is however out of scope in this project.
 
-Moreover the project will be developed using Test Driven Developement and with the MVVM design pattern.
+Moreover the project will be developed with the MVVM design pattern.
 
 ##Setting up the environment
 
