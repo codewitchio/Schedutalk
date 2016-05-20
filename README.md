@@ -6,6 +6,8 @@ This project is part of a school assignment at KTH (Royal Swedish Institution of
 To do practice these qualities at github we first needed a project. So we decided to try something out of our previous experiences, thats why we wanted to create an app working for the biggest mobile OSes in Sweden. Android, iOS and Windows.
 We chosen to work with the Xamarin framework for .NET
 
+This project will have as a goal to create a custom calendar using the Xamarin framework. In terms of time more features may be added to the calendar.
+
 Due to the short time this project will be held the goal is to make the app function on a  Nexus 6 running Android 6.0.1 but also a Windows Lumia 435 using windows 10.0.14295.1005. Hopefully other models and version will function as well, this is however out of scope in this project.
 
 Moreover the project will be developed with the MVVM design pattern.
