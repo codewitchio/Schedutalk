@@ -65,8 +65,8 @@ namespace Schedutalk.ViewModel
                 return new Command(item =>
                 {
                     ScheduleEventView sEV = new ScheduleEventView();
-                    sEV.BindingContext = item;
-                    Navigation.PushAsync(new View.ScheduleEventView());
+                    sEV.BindingContext = new Model.MEvent { Title = ((MEvent)item).Title};
+                    Navigation.PushAsync(sEV, true);
                 });
             }
         }
