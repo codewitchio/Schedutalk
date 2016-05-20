@@ -66,7 +66,7 @@ namespace Schedutalk.ViewModel
                 {
                     ScheduleEventView sEV = new ScheduleEventView();
                     sEV.BindingContext = item;
-                    Navigation.PushAsync(new View.ScheduleEventView());
+                    Navigation.PushAsync(sEV, true);
                 });
             }
         }
