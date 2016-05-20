@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>85930d70-750c-41a6-9b95-03faaed4159c</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>B9053591401D3DDD6DB97C5457CD5861AD846FE754AF32DFE7F8CEDE53FFCB8F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>85930d70-750c-41a6-9b95-03faaed4159c_1.0.0.0_neutral__nh7s0b45jarrj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>85930d70-750c-41a6-9b95-03faaed4159c_nh7s0b45jarrj!App</RegisteredUserModeAppID>
@@ -19,104 +19,104 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-04T06:13:58.884</Modified>
+      <Modified>2016-05-18T15:36:28.043</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\Schedutalk.Windows.exe">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\Schedutalk.Windows.exe">
       <PackagePath>Schedutalk.Windows.exe</PackagePath>
-      <Modified>2016-05-04T09:52:20.486</Modified>
+      <Modified>2016-05-20T09:07:17.696</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk\bin\Debug\Schedutalk.dll">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk\bin\Debug\Schedutalk.dll">
       <PackagePath>Schedutalk.dll</PackagePath>
-      <Modified>2016-05-04T09:52:18.819</Modified>
+      <Modified>2016-05-20T09:07:15.345</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Core.dll">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.226</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.dll">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.dll">
       <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.536</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
       <PackagePath>Xamarin.Forms.Platform.WinRT.dll</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.511</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet.dll</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.417</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.582</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-04T06:11:10.897</Modified>
+      <Modified>2016-05-18T15:33:20.508</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-04T06:11:10.913</Modified>
+      <Modified>2016-05-18T15:33:20.511</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-04T06:11:10.913</Modified>
+      <Modified>2016-05-18T15:33:20.514</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-04T06:11:10.913</Modified>
+      <Modified>2016-05-18T15:33:20.516</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\Schedutalk.Windows.xr.xml">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\Schedutalk.Windows.xr.xml">
       <PackagePath>Schedutalk.Windows.xr.xml</PackagePath>
-      <Modified>2016-05-04T06:13:56.712</Modified>
+      <Modified>2016-05-18T15:33:21.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2016-05-04T06:13:56.915</Modified>
+      <Modified>2016-05-18T15:36:26.133</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2016-05-04T06:13:56.915</Modified>
+      <Modified>2016-05-18T15:36:26.142</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.518</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.521</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.531</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.534</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.436</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.447</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml</PackagePath>
-      <Modified>2015-11-17T06:31:56.000</Modified>
+      <Modified>2016-05-18T15:33:26.462</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\EricL\git\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-04T06:13:58.181</Modified>
+      <Modified>2016-05-18T15:36:27.407</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
