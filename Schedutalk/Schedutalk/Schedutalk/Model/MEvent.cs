@@ -47,5 +47,19 @@ namespace Schedutalk.Model
                 OnPropertyChanged("Information");
             }
         }
+
+        string _comment;
+        public string Comment
+        {
+            get
+            {
+                return _comment;
+            }
+            set
+            {
+                _comment = value;
+                OnPropertyChanged("Comment");
+            }
+        }
     }
 }
