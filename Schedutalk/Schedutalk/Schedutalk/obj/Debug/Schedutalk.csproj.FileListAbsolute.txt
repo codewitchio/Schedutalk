@@ -20,3 +20,4 @@ C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk\obj\Debug\Sc
 C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk\obj\Debug\Schedutalk.View.MainView.xaml.g.cs
 C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk\obj\Debug\Schedutalk.dll
 C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk\obj\Debug\Schedutalk.pdb
+C:\Users\EricL\git\Test\Schedutalk\Schedutalk\Schedutalk\Schedutalk\obj\Debug\Schedutalk.View.ScheduleEventView.xaml.g.cs

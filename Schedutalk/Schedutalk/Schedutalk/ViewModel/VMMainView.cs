@@ -1,4 +1,5 @@
 ﻿using Schedutalk.Model;
+using Schedutalk.View;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,6 +15,11 @@ namespace Schedutalk.ViewModel
 {
     public class VMMainView : VMBase
     {
+        INavigation Navigation
+        {
+            get; set;
+        }
+
         public ObservableCollection<MEvent> ScheduleInfo
         {
             get; set;
@@ -58,12 +64,16 @@ namespace Schedutalk.ViewModel
             {
                 return new Command(item =>
                 {
+                    ScheduleEventView sEV = new ScheduleEventView();
+                    sEV.BindingContext = item;
+                    Navigation.PushAsync(new View.ScheduleEventView());
                 });
             }
         }
 
-        public VMMainView()
+        public VMMainView(View.MainView mainView)
         {
+            Navigation = mainView.Navigation;
             ScheduleInfo = new ObservableCollection<MEvent>();
             ScheduleEvents = new ObservableCollection<MEvent>();
             ScheduleData = new Dictionary<DateTime, ObservableCollection<MEvent>>();
