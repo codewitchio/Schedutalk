@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Schedutalk.View.ScheduleEventView"
+             
+             Title="Edit Event">
+  <StackLayout>
+    <TableView Intent ="Menu">
+      <TableRoot>
+        <TableSection Title="Date">
+          <TextCell Text="{Binding StartDate.Hour, StringFormat='{00:#,#00}:00 - Cant show minutes yet'}"></TextCell>
+          <TextCell Text="{Binding EndDate.Hour, StringFormat='{00:#,#00}:00 - Cant show minutes yet'}"></TextCell>
+        </TableSection>
+        <TableSection Title="Modify event">
+          <EntryCell Label="Title " Text="{Binding Title}"></EntryCell>
+          <EntryCell Label="Information " Text="{Binding Information}"></EntryCell>
+        </TableSection>
+        <TableSection Title="Comment">
+          <EntryCell Text="{Binding Comment}"></EntryCell>
+        </TableSection>
+      </TableRoot>
+    </TableView>
+  </StackLayout>
+</ContentPage>

@@ -4,6 +4,11 @@
 		<Qualifiers/>
 		<ResourceMapSubtree name="Files">
 			<ResourceMapSubtree name="Xamarin.Forms.Platform.WinRT.Tablet">
+				<NamedResource name="FormsTextBoxStyle.xbf" uri="ms-resource://Xamarin.Forms.Platform.WinRT.Tablet/Files/Xamarin.Forms.Platform.WinRT.Tablet/FormsTextBoxStyle.xbf">
+					<Candidate type="Path">
+						<Value>Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="Resources.xbf" uri="ms-resource://Xamarin.Forms.Platform.WinRT.Tablet/Files/Xamarin.Forms.Platform.WinRT.Tablet/Resources.xbf">
 					<Candidate type="Path">
 						<Value>Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf</Value>

@@ -624,4 +624,3 @@ namespace Schedutalk.Windows.Schedutalk_Windows_XamlTypeInfo
 }
 
 
-
