@@ -58,6 +58,10 @@
                        LineBreakMode="WordWrap" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand"
                   ></Label>
                 <StackLayout Grid.Row="1">
+                  <Label Text="{Binding Place}" 
+                       WidthRequest="300" Grid.Row="0" FontSize="14"
+                       LineBreakMode="WordWrap" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand"
+                  ></Label>
                   <Label Text="{Binding Information}"
                          WidthRequest="300" FontSize="14" VerticalOptions="FillAndExpand"></Label>
                 </StackLayout>

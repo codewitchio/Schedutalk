@@ -105,9 +105,23 @@ namespace Schedutalk.ViewModel
         {
             ObservableCollection<MEvent> demo = new ObservableCollection<MEvent>();
             string longText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-            demo.Add(new Model.MEvent { Title = "Matematics", StartDate = new Model.MDate(08, 00), EndDate = new Model.MDate(9, 00) });
             demo.Add(new Model.MEvent { Title = "Exercise", StartDate = new Model.MDate(12, 00), EndDate = new Model.MDate(15, 00) });
             demo.Add(new Model.MEvent { Title = "Hackathon", Information = longText, StartDate = new Model.MDate(20, 00), EndDate = new Model.MDate(23, 59) });
+
+            //KTH API DEMO
+            demo.Add(new Model.MEvent {
+                Title = "Matematics",
+                Place = "E2",
+                StartDate = new Model.MDate(08, 00),
+                EndDate = new Model.MDate(9, 00) });
+
+            demo.Add(new Model.MEvent
+            {
+                Title = "Matematics in R^4",
+                Place = "E5000",
+                StartDate = new Model.MDate(09, 15),
+                EndDate = new Model.MDate(10, 00)
+            });
 
             ScheduleData.Add(new DateTime(presentDate.Year, presentDate.Month, presentDate.Day), demo);
 

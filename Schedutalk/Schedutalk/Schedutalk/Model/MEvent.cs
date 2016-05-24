@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Schedutalk.Logic.KTHPlaces;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +10,7 @@ namespace Schedutalk.Model
 {
     public class MEvent : ViewModel.VMBase
     {
+        KTHPlacesDataFetcher kthPlacesDataFetcher = new KTHPlacesDataFetcher();
         public MDate StartDate
         {
             get;
@@ -18,6 +21,21 @@ namespace Schedutalk.Model
         {
             get;
             set;
+        }
+
+        string _place;
+        public string Place
+        {
+            get
+            {
+                return _place;
+            }
+            set
+            {
+                _place = value;
+                HasPowerOutlet = kthPlacesDataFetcher.isRoomHavingPowerOutlet(_place);
+                OnPropertyChanged("Place");
+            }
         }
 
         string _title;
@@ -45,6 +63,20 @@ namespace Schedutalk.Model
             {
                 _information = value;
                 OnPropertyChanged("Information");
+            }
+        }
+
+        string _hasPowerOutlet;
+        public string HasPowerOutlet
+        {
+            get
+            {
+                return _hasPowerOutlet;
+            }
+            set
+            {
+                _hasPowerOutlet = value;
+                OnPropertyChanged("HasPowerOutlet");
             }
         }
 
