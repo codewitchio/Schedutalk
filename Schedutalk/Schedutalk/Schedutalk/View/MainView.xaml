@@ -34,7 +34,7 @@
         </DatePicker.MaximumDate>
       </DatePicker>
       
-      <Entry Placeholder="Program" Grid.Column="2"></Entry>
+      <Entry Placeholder="Program" Grid.Column="2" Completed="programEntryCompleted"></Entry>
       
     </Grid>
     <ScrollView>

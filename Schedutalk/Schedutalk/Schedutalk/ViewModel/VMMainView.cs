@@ -1,5 +1,6 @@
 ﻿using Schedutalk.Model;
 using Schedutalk.View;
+using Schedutalk.Logic;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -102,6 +103,7 @@ namespace Schedutalk.ViewModel
         void programEntryCompleted (object sender, EventArgs e)
         {
             var program = ((Entry)sender).Text;
+            var events = Schedutalk.Logic.Program.getProgramEvents(program);
         }
 
         /// <summary>
