@@ -72,6 +72,19 @@ namespace Schedutalk.ViewModel
             }
         }
 
+        //Triggered when the user completes the program entry by pressing the enter key
+        public Command CompletedCommand
+        {
+            get
+            {
+                return new Command(item =>
+                {
+                    var program = ((Entry)item).Text;
+                    var events = Schedutalk.Logic.Program.getProgramEvents(program);
+                });
+            }
+        }
+
         public VMMainView(View.MainView mainView)
         {
             Navigation = mainView.Navigation;
@@ -97,13 +110,6 @@ namespace Schedutalk.ViewModel
             }
 
             return scheduleInfo;
-        }
-
-        //Triggered when the user completes the program entry by pressing the enter key
-        void programEntryCompleted (object sender, EventArgs e)
-        {
-            var program = ((Entry)sender).Text;
-            var events = Schedutalk.Logic.Program.getProgramEvents(program);
         }
 
         /// <summary>
