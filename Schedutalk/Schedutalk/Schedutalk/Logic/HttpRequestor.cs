@@ -22,7 +22,7 @@ namespace Schedutalk.Logic
 
         public string getJSONAsString(Func<string, HttpRequestMessage> requestTask, string placeName)
         {
-            Task<string> task = getHttpRequestAsString(requestTask, "E2");
+            Task<string> task = getHttpRequestAsString(requestTask, placeName);
 
             task.Wait();
             //Format string
