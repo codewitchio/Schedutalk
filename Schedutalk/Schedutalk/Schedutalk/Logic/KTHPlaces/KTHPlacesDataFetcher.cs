@@ -53,8 +53,16 @@ namespace Schedutalk.Logic.KTHPlaces
             if (roomExists)
             {
                 recivedData = httpRequestor.getJSONAsString(getRoomDataRequestMessage, placeName);
-                RoomDataContract roomDataContract =
-                    JsonConvert.DeserializeObject<RoomDataContract>(recivedData);
+                RoomDataContract roomDataContract;
+                try
+                {
+                    roomDataContract =
+                     JsonConvert.DeserializeObject<RoomDataContract>(recivedData);
+                }
+                catch
+                {
+                    return null;
+                }
                 return roomDataContract;
             }
 
@@ -64,7 +72,6 @@ namespace Schedutalk.Logic.KTHPlaces
         public HttpRequestMessage getRoomExistRequestMessage(string room)
         {
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, @"https://www.kth.se/api/places/v3/room/exists/" + room + "?api_key=" + APIKEY);
-            Debug.WriteLine(request.RequestUri.ToString());
             return request;
         }
 
