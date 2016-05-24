@@ -22,7 +22,23 @@ namespace Schedutalk.Logic.KTHPlaces
         public string PlaceName { get; set; }
         [DataMember(Name = "uid")]
         public string UId { get; set; }
+        [DataMember(Name = "equipment")]
+        public Equipment[] Equipment { get; set; }
     }
 
+
+    [DataContract]
+    public class Equipment
+    {
+        [DataMember(Name = "name")]
+        public Name Name { get; set; }
+    }
+    
+    [DataContract]
+    public class Name
+    {
+        [DataMember(Name = "en")]
+        public string En { get; set; }
+    }
 
 }
