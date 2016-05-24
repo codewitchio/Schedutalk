@@ -20,5 +20,17 @@ namespace Schedutalk.Logic
             return result;
         }
 
+        public string getJSONAsString(Func<string, HttpRequestMessage> requestTask, string placeName)
+        {
+            Task<string> task = getHttpRequestAsString(requestTask, "E2");
+
+            task.Wait();
+            //Format string
+            string replacement = task.Result;
+            if (0 == replacement[0].CompareTo('[')) replacement = replacement.Substring(1);
+            if (0 == replacement[replacement.Length - 1].CompareTo(']')) replacement = replacement.Remove(replacement.Length - 1);
+
+            return replacement;
+        }
     }
 }
