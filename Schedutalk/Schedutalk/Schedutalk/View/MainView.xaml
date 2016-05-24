@@ -33,6 +33,9 @@
           </sys:DateTime>
         </DatePicker.MaximumDate>
       </DatePicker>
+      
+      <Entry Placeholder="Program" Grid.Column="2"></Entry>
+      
     </Grid>
     <ScrollView>
       <StackLayout Orientation="Horizontal" BackgroundColor="White">

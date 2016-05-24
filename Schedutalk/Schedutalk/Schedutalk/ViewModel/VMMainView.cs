@@ -98,6 +98,12 @@ namespace Schedutalk.ViewModel
             return scheduleInfo;
         }
 
+        //Triggered when the user completes the program entry by pressing the enter key
+        void programEntryCompleted (object sender, EventArgs e)
+        {
+            var program = ((Entry)sender).Text;
+        }
+
         /// <summary>
         /// Use for simulating data
         /// </summary>
