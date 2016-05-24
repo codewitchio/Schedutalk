@@ -19,6 +19,22 @@ namespace Schedutalk.Logic.KTHPlaces
         const string APIKEY = "NZfvZYDhIqDrPZvsnkY0Ocb5qJPlQNwh1BsVEH5H";
         HttpRequestor httpRequestor;
 
+        public string isRoomHavingPowerOutlet(string placeName)
+        {
+            RoomDataContract rDC = getRoomData(placeName);
+            if (rDC != null)
+            {
+                for (int i = 0; i < rDC.Equipment.Length; i++)
+                {
+                    if (0 == rDC.Equipment[i].Name.En.CompareTo("Power outlet"))
+                    {
+                        return "Yes";
+                    }
+                }
+            }
+            return "No";
+        }
+
         public RoomDataContract getRoomData(string placeName)
         {
             httpRequestor = new HttpRequestor();
