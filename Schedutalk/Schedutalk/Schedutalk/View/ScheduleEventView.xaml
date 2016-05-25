@@ -11,8 +11,12 @@
           <TextCell Text="{Binding StartDate.Hour, StringFormat='{00:#,#00}:00 - Cant show minutes yet'}"></TextCell>
           <TextCell Text="{Binding EndDate.Hour, StringFormat='{00:#,#00}:00 - Cant show minutes yet'}"></TextCell>
         </TableSection>
+        <TableSection Title="Has Power Outlet">
+          <TextCell Text="{Binding HasPowerOutlet}"></TextCell>
+        </TableSection>
         <TableSection Title="Modify event">
           <EntryCell Label="Title " Text="{Binding Title}"></EntryCell>
+          <EntryCell Label="Place " Text="{Binding Place}"></EntryCell>
           <EntryCell Label="Information " Text="{Binding Information}"></EntryCell>
         </TableSection>
         <TableSection Title="Comment">

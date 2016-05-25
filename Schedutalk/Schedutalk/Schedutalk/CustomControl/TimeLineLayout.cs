@@ -54,7 +54,7 @@ namespace Schedutalk.CustomControl
             var view = (Xamarin.Forms.View)ItemTemplate.CreateContent();
             var tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += (s, e) => {
-                Command.Execute(item);
+                if (Command != null) Command.Execute(item);
             };
             view.GestureRecognizers.Add(tapGestureRecognizer);
             var bindableObject = view as BindableObject;
