@@ -21,7 +21,7 @@ This picture illustrates the schedule view and also the start view of the app. N
 ![](http://i.imgur.com/7cAKfkO.png)
 
 This view is nothing but really a place to modify certain data connected to that event. Due to the time limit of this course editing time of an event was not implemented.
-What makes this view interesting is the "has power outlet" feature. This basically does say wheter the provided place has a power outlet or not. This was done by doing a http request to the link:https://www.kth.se/api/places/swagger/?url=/api/places/swagger.json[KTH places api].
+What makes this view interesting is the "has power outlet" feature. This basically does say wheter the provided place has a power outlet or not. This was done by doing a http request to the [KTH places api](https://www.kth.se/api/places/swagger/?url=/api/places/swagger.json).
 This process is done asyncrounously making the UI still responsive during the httprequest.
 
 
