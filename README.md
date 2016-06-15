@@ -12,6 +12,19 @@ Due to the short time this project will be held the goal is to make the app func
 
 Moreover the project will be developed with the MVVM design pattern.
 
+##Some pictures of the app
+
+![](http://i.imgur.com/fYHGHjV.png)
+
+This picture illustrates the schedule view and also the start view of the app. Not that this view is created with two customTimeLineLayouts. Due to this controls ability to contain a generic child element, it was possible to create both the time column but also the event column. Note that you can select which date and also the the events are tapable, once tapped the view provided in the following picture appears. 
+
+![](http://i.imgur.com/7cAKfkO.png)
+
+This view is nothing but really a place to modify certain data connected to that event. Due to the time limit of this course editing time of an event was not implemented.
+What makes this view interesting is the "has power outlet" feature. This basically does say wheter the provided place has a power outlet or not. This was done by doing a http request to the link:https://www.kth.se/api/places/swagger/?url=/api/places/swagger.json[KTH places api].
+This process is done asyncrounously making the UI still responsive during the httprequest.
+
+
 ##Setting up the environment
 
 **APIs used for compiling the projects code was:**
