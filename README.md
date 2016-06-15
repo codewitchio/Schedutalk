@@ -16,7 +16,7 @@ Moreover the project will be developed with the MVVM design pattern.
 
 ![](http://i.imgur.com/fYHGHjV.png)
 
-This picture illustrates the schedule view and also the start view of the app. Not that this view is created with two customTimeLineLayouts. Due to this controls ability to contain a generic child element, it was possible to create both the time column but also the event column. Note that you can select which date and also the the events are tapable, once tapped the view provided in the following picture appears. 
+This picture illustrates the schedule view and also the start view of the app. Not that this view is created with two customTimeLineLayouts (a custom layout control made from scratch). Due to this controls ability to contain a generic child element, it was possible to create both the time column but also the event column. Note that you can select which date and also the the events are tapable, once tapped the view provided in the following picture appears. 
 
 ![](http://i.imgur.com/7cAKfkO.png)
 
